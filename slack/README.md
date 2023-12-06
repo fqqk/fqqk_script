@@ -29,15 +29,16 @@ you can get token if install success!
 
 4. replace 'your_slack_user_oauth_token'
 
-sh_script.rb
+reaction.rb
 ```
 SLACK_USER_OAUTH_TOKEN = 'your_slack_user_oauth_token'.freeze
 ```
 
 5. execute script
 ```
-cd your_project_dir/to/path
-$ ruby sh_script.rb
+cd your_dir/fqqk_script/slack
+$ chmod +x script.sh
+$ ./script.sh
 ```
 
 6. result
