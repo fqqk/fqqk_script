@@ -3,6 +3,7 @@ require 'json'
 require 'uri'
 
 # TODO: 膨大な量のMessageを収集するためそれに耐えうるようにする
+# TODO: チャンネル数は絞ろう
 
 # SlackのAPIを叩くためのトークン
 # curl -X POST "https://slack.com/api/auth.test" -d "token=your_slack_user_oauth_token"
@@ -14,9 +15,9 @@ CHANNEL_URL = "#{BASE_API_URL}/conversations.list?exclude_archived=true"
 HISTORY_URL = "#{BASE_API_URL}/conversations.history"
 USER_INFO_URL = "#{BASE_API_URL}/users.info"
 
-# 取得したいメッセージの期間を1年とする
-OLDEST_MSG_TIMESTAMP = Time.new(2023, 4, 1).to_i.freeze
-LATEST_MSG_TIMESTAMP = Time.now.to_i.freeze
+# 取得したいメッセージの期間を1ヶ月とする
+OLDEST_MSG_TIMESTAMP = Time.new(2023, 11, 1).to_i.freeze
+LATEST_MSG_TIMESTAMP = Time.new(2023, 11, 30).to_i.freeze
 
 
 # ワークスペースの全チャンネルのIDを取得
