@@ -39,3 +39,10 @@ SLACK_USER_OAUTH_TOKEN = 'your_slack_user_oauth_token'.freeze
 cd your_project_dir/to/path
 $ ruby sh_script.rb
 ```
+
+6. result
+```
+【No.1】user1 is reaction_counts: 11, most_often_used_emoji: white_check_mark is 4 times
+【No.2】user2 is reaction_counts: 8, most_often_used_emoji: smile is 3 times
+【No.3】user3 is reaction_counts: 2, most_often_used_emoji: bow is 3 times
+```
